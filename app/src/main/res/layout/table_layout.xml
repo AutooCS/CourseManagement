@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:scrollbars="vertical">
+
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -32,6 +33,7 @@
                     android:background="#FFF0F0"
                     android:text="2012"
                     android:textSize="25dp"
+                    android:layout_margin="2dip"
                     />
 
                 <Button
@@ -41,7 +43,8 @@
                     android:layout_weight="1"
                     android:background="#FFF0F0"
                     android:text="Internet技术与协议分析实验"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp"
+                    android:layout_margin="2dip"/>
 
                 <Button
                     android:id="@+id/but3"
@@ -49,7 +52,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="#FFF0F0"
-                    android:text="" />
+                    android:text=""
+                    android:layout_margin="2dip"/>
 
                 <Button
                     android:id="@+id/but4"
@@ -57,7 +61,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="#FFF0F0"
-                    android:text="" />
+                    android:text=""
+                    android:layout_margin="2dip"/>
 
                 <Button
                     android:id="@+id/but5"
@@ -66,7 +71,8 @@
                     android:layout_weight="1"
                     android:background="#FFF0F0"
                     android:text="查看"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:layout_margin="2dip"/>
 
                 <Button
                     android:id="@+id/but6"
@@ -75,7 +81,8 @@
                     android:layout_weight="1"
                     android:background="#FFF0F0"
                     android:text="未选择"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:layout_margin="2dip"/>
 
             </TableRow>
         </RelativeLayout>
@@ -90,7 +97,8 @@
                 android:id="@+id/row2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal" >
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:layout_width="match_parent"
@@ -98,7 +106,8 @@
                     android:layout_weight="1"
                     android:background="#FFF0F0"
                     android:text="2012"
-                    android:textSize="25dp"/>
+                    android:textSize="25dp"
+                    android:layout_margin="2dip"/>
 
                 <Button
                     android:layout_width="match_parent"
@@ -264,17 +273,19 @@
         </RelativeLayout>
 
         <!--commit Button-->
-            <Button
-                android:id="@+id/class_commit"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="提交"
-                android:textColor="#000000"
-                android:textSize="30dp"
-                android:background="#ffbf0c"
-                />
+        <Button
+            android:id="@+id/class_commit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="提交"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:background="#ffbf0c"
+            />
 
     </TableLayout>
+
+
 
 
 </ScrollView>
