@@ -1,8 +1,11 @@
 package com.example.wwk.myapplication;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 /**
@@ -26,7 +29,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
 
     private Context mContext;
-
+    //第一个参数为该类本身；第二个参数为数据库的名字；第3个参数是用来设置游标对象的，这里一般设置为null；参数四是数据库的版本号。
     public MyDatabaseHelper(Context context, String name,
                             SQLiteDatabase.CursorFactory factory, int version) {
         super(context,name,factory,version);
@@ -47,3 +50,5 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     }
 
 }
+
+

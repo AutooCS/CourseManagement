@@ -46,62 +46,65 @@
             android:text="@string/deadline"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:id="@+id/linear3">
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="60dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/linear3">&ndash;&gt;-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="25dp"
-            android:text="年级"
-            android:textColor="#000000"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="25dp"
-            android:text="课程名称"
-            android:textColor="#000000"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="25dp"
-            android:text="起讫周序"
-            android:textColor="#000000"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="25dp"
-            android:text="备注"
-            android:textColor="#000000"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="25dp"
-            android:text="详情"
-            android:textColor="#000000"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="25dp"
-            android:text="选择"
-            android:textColor="#000000"
-            android:gravity="center"/>
-    </LinearLayout>
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="25dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="年级"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#000000"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="25dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="课程名称"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#000000"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="25dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="起讫周序"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#000000"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="25dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="备注"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#000000"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="25dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="详情"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#000000"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="25dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="选择"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#000000"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"/>&ndash;&gt;-->
+    <!--</LinearLayout>-->
 
-    <include layout="@layout/table_layout"></include>
+    <!--<include layout="@layout/table_layout"></include>-->
 
-
+    <ListView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MyListView">
+    </ListView>
 
 
 </LinearLayout>
