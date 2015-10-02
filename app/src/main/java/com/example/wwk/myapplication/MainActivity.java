@@ -69,13 +69,8 @@ public class MainActivity extends Activity {
     }
 
     private void initCourses() {
-//       Course apple = new Course("Apple","w");
-//        courseList.add(apple);
-//        Course banana = new Course("Banana","s" );
-//        courseList.add(banana);
 
-
-        Bundle bundle =  new queryDB().queryDB(this);
+     Bundle bundle =  new queryDB().queryDB(this);
 
         int rows=bundle.getInt("rows");
         int cols = bundle.getInt("cols");
@@ -85,23 +80,6 @@ public class MainActivity extends Activity {
             Course cell = new Course(bundle.getString(tmp + 3), "未选");
             courseList.add(cell);
         }
-
-
-
-
-//            List<Childs> child1 = new ArrayList<Childs>();
-//            Childs child1V = new Childs();
-//            child1V.setCourseName(bundle.getString(s1+3));
-//            child1V.setZhuanYe(bundle.getString(s1+1));
-//            child1V.setXuanXiuType(bundle.getString(s1+4));
-//            child1V.setZhuanYeNumber(bundle.getString(s1+2));
-//            child1V.setGrade(bundle.getString(s1+0));
-//            child1V.setCredit(bundle.getString(s1+5));
-//            child1V.setTime(bundle.getString(s1+6));
-//            child1V.setOtherTime(bundle.getString(s1+7)+" "+bundle.getString(s1+8));
-//            child1.add(child1V);
-//            childData.add(child1);
-
 
     }
 
